@@ -1,0 +1,1 @@
+pusing pala gua anjg

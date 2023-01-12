@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website Untuk PKL">
+  <meta name="author" content="Alvio Adji Januar">
+  <title>Laporan PKL Berbasis Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind.config.js"></script>
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="shortcut icon" href="img/Picture7.png"/>
+</head>
+
+<body class="overflow-x-hidden bg-[#2b2b2b] max-w-full">
+    <section class="up" id="up" style="display: none;"></section>
+    <section class="done" id="done" style="display: none;"></section>
+    <div class="">
+    <div class="sidebar hidden md:block">
+      <div class="logo-details">
+        <i class='bx bxl-nodejs icon'></i>
+          <div class="logo_name">Bangun Kreatif Abadi</div>
+          <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="nav-list ">
+        <li>
+          <a href="#home">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#About">
+            <i class="fas fa-building"></i>
+            <span class="links_name">About</span>
+          </a>
+          <span class="tooltip">About</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-history"></i>
+            <span class="links_name">History</span>
+          </a>
+          <span class="tooltip">History</span>
+        </li>
+        <li>
+          <a href="#profile">
+            <i class="bx bxs-user"></i>
+            <span class="links_name">Profile</span>
+          </a>
+          <span class="tooltip">Profile</span>
+        </li>
+        <li>
+          <a href="#projects">
+            <i class="bx bxs-folder"></i>
+            <span class="links_name">Project</span>
+          </a>
+          <span class="tooltip">Project</span>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="bx bxs-contact"></i>
+            <span class="links_name">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+    <!-- sidebar -->
+  <section class="block md:hidden">
+    <div x-data="{ menu: false }" class="block">
+      <button @click="menu = !menu" class="z-30 absolute w-full -top-2 px-3 py-4 md:hover:bg-green-200 transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none" style="-webkit-tap-highlight-color: transparent;" >
+        <svg x-show="!menu" class="h-14 w-14 text-white relative right-8 pl-6 pr-1 py-5 bg-[#00ffff] rounded-3xl mt-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"  d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+        </svg>
+	      <svg x-transition:enter="transform transition-transform duration-1000" x-transition:enter-start="-translate-x-full" x-show="menu" 
+             class="h-14 w-14 text-black absolute top-12 right-4 pl-6 pr-1 py-4 bg-[#00ffff] rounded-full" xmlns="http://www.w3.org/2000/sv" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+	        <path stroke-linecap="rond" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+	    </button>
+      
+   
+    </div>
+  </section> 
+
+     <section class="home" id="home">
+      <div id="particles-js"><canvas class="particles-js-canvas-el" width="828" height="2500" style="width: 100%; height: 100%;"></canvas></div>
+      <section class="text-white body-font w-full h-screen">
+        <div data-aos="fade-right" data-aos-delay="200" class="flex flex-col justify-center items-center h-screen w-full">
+
+          <!-- line -->
+          <div class="block md:hidden absolute left-0 w-3 h-screen bg-[#00ffff]"></div>
+          <!-- -->
+          
+          <h1 class="title-font md:text-5xl text-xl mb-2 font-bold text-white">Selamat Datang Di Website PKL</h1>
+          <h1 class="title-font sm:text-5xl text-lg mb-4 font-bold text-white"><span class="teks-berjalan" style="color: cyan;"></span></h1>
+          </div>
+        <div class="music-player hidden" id="music-player" style="display: none;">
+        <h1 class="music-name">Playlist Lagu Di PKL</h1>
+        <p class="artist-name">Random Song</p>
+      <div class="disk"></div>
+      <div class="song-slider">
+          <input type="range" value="0" class="seek-bar">
+          <span class="current-time">00:00</span>
+          <span class="song-duration">00:00</span>
+      </div>
+      <div class="controls">
+        <button class="play-btn pause">
+            <span></span>
+            <span></span>
+        </button>
+    </div> 
+      </div>
+      <a href="#About">
+        <div class="scroll-down"></div>
+      </a>
+      </section>
+    </section>
+
+    <section id="About">
+      <section class="text-white body-font w-full h-full py-10">
+        <h1 class="font-bold title-font mb-2 text-white">
+        <div class="text-xl md:text-2xl flex flex-1 justify-center">
+        <i class="fas fa-building"></i>
+        <p class="pl-2 text-xl md:text-2xl text-white">Profile Bangun Kreatif Abadi</p>
+        </div>
+      </h1>
+      <div class="container mx-auto w-full flex flex-wrap flex-col md:flex-row justify-center items-center">
+        <div  data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="center" class="lg:w-1/2 w-full md:w-1/2 p-3 hidden md:block">
+          <img class="object-cover object-center rounded" width="500" alt="hero" src="img/pt.png">
+        </div>
+           <div  data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="center" class="lg:w-1/2 max-w-md mx-auto md:w-1/2 p-3 block md:hidden">
+          <img class="object-cover object-center rounded" width="500" alt="hero" src="img/pt.png">
+        </div>
+        <div class="lg:w-1/2 w-full md:w-1/2 p-3 px-4">
+          <p class="text-white text-sm md:text-base leading-relaxed text-justify mb-8">
+            PT. Bangun Kreatif Abadi (BKA) merupakan anak perusahaan yang bergerak di bidang teknologi informasi dan menawarkan solusi yang komprehensif untuk semua sektor bisnis. Kami mengkhususkan diri dalam layanan produksi dan pengembangan perangkat lunak ICT (Information & Communication Technology) di Indonesia. Didirikan pada tahun 2017, visi utama kami adalah mendukung perusahaan swasta & pemerintah dalam memecahkan masalah teknologi informasi yang dihadapi dalam rangka efisiensi penggunaan perangkat lunak dan perangkat keras.
+          </p>
+          <p class="text-white text-sm md:text-base leading-relaxed mb-8">
+            <i class="fas fa-phone">
+            (021) 295-333-06
+          </i>
+          </p>
+          <p class="text-white text-sm md:text-base leading-relaxed mb-8">
+          <a class="test" href="https://www.bangun-kreatif.com/" target="_blank">     
+            <ion-icon name="browsers-outline">
+            </ion-icon>
+            Website
+          </a>
+          </p>
+          <p class="text-white text-sm md:text-base leading-relaxed mb-8">
+            <i class="fas fa-map-marker-alt">
+              Jalan Hangjuang VII No.88 Bekasi, Jawa Barat 17412, ID
+          </i>
+          </p>
+        </div>
+      </div>
+      </section>
+   </section>
+
+    <section id="History" class="py-10">
+       <h1 class="font-bold title-font mb-2 text-white">
+        <div class="text-xl md:text-2xl flex flex-1 justify-center">
+        <i class="fas fa-history"></i>
+        <p class="pl-2 text-xl md:text-2xl text-white">History Bangun Kreatif Abadi</p>
+        </div>
+      </h1>
+       <div class="container mx-auto w-full flex flex-wrap flex-col md:flex-row justify-center items-center">
+        <div class="lg:w-1/2 w-full md:w-1/2 p-3 px-4 hidden md:block">
+          <p class="text-white text-sm md:text-base leading-relaxed text-justify mb-8">
+            PT. Bangun Kreatif Abadi (BKA) adalah perusahaan yang bergerak di bidang teknologi informasi dan menawarkan solusi 
+            yang komprehensif untuk semua sektor bisnis dengan lebih dari 50 tahun total akumulasi dari pengalaman dan pengetahuan.
+          </p>
+           <p class="text-white text-sm md:text-base leading-relaxed text-justify mb-8">
+            1. Pada tahun 2008 memulai model bisnis berbasis proyek.
+            <br>
+            2. pada tahun 2010 Memulai pengembangan aplikasi seluler.
+            <br>
+            3. pada tahun 2014 Memulai model bisnis berbasis retainer dan akural.
+            <br>
+            4. pada tahun 2017 Pembukaan cabang baru di Auatralia yang beroperasi di bawah merek C3 digital.
+            <br>
+            5. pada tahun 2020 Pembukaan cabang baru di holland yang beroperasi di bawah JAWARA B.V.
+          </p>
+        </div>
+        <div  data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="center" class="lg:w-1/2 w-full md:w-1/2 p-3 hidden md:block">
+          <img class="object-cover object-center rounded mx-10 bg-white p-5" width="500" alt="hero" src="img/sejarah.png">
+        </div>
+           <div  data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="center" class="lg:w-1/2 max-w-md mx-auto md:w-1/2 p-3 block md:hidden">
+          <img class="object-cover object-center rounded bg-white p-5" width="500" alt="hero" src="img/sejarah.png">
+        </div>
+        <div class="lg:w-1/2 w-full md:w-1/2 p-3 px-4 block md:hidden">
+          <p class="text-white text-sm md:text-base leading-relaxed text-justify mb-8">
+            PT. Bangun Kreatif Abadi (BKA) adalah perusahaan yang bergerak di bidang teknologi informasi dan menawarkan solusi 
+            yang komprehensif untuk semua sektor bisnis dengan lebih dari 50 tahun total akumulasi dari pengalaman dan pengetahuan.
+          </p>
+           <p class="text-white text-sm md:text-base leading-relaxed text-justify mb-8">
+            1. Pada tahun 2008 memulai model bisnis berbasis proyek
+            <br>
+            2. pada tahun 2010 Memulai pengembangan aplikasi seluler
+            <br>
+            3. pada tahun 2014 Memulai model bisnis berbasis retainer dan akural
+            <br>
+            4. pada tahun 2017 Pembukaan cabang baru di Auatralia yang beroperasi di bawah merek C3 digital
+            <br>
+            5. pada tahun 2020 Pembukaan cabang baru di holland yang beroperasi di bawah JAWARA B.V.
+          </p>
+        </div>
+      </div>
+      </section>
+   </section>
+
+   <section id="profile">
+    <br>
+    <div class="flex flex-wrap w-full mb-3 flex-col items-center text-center">
+      <h1 class="font-bold title-font mb-1 text-white">
+        <div class="text-xl md:text-2xl flex flex-1 justify-center">
+        <i class="fas fa-user"></i>
+        <p class="pl-2 text-xl md:text-2xl text-white">Profile</p>
+        </div>
+      </h1>
+    </div>
+    <div class="w-full h-full max-w-md md:max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-3 relative md:left-6 mx-16">
+      <!--Card 1-->
+      <div id="card1"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="center" class="rounded-lg shadow-xl bg-neutral-900 overflow-hidden md:cursor-pointer">
+        <img class="rounded-full p-4 h-40 w-40 mx-auto" src="img/profile/pio.jpg" alt="Piyo">
+        <div class="px-6 py-4">
+          <div class="font-bold text-neutral-100 text-lg md:text-xl mb-2 text-center">Alvio Adji Januar</div>
+          <p class="text-gray-500 text-sm md:text-base text-center font-semibold">
+            Fullstack Developer
+          </p>
+        </div>
+      </div>
+      <!--Card 2-->
+      <div id="card2"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="center" class="rounded-lg shadow-xl bg-neutral-900 overflow-hidden md:cursor-pointer">
+        <img class="rounded-full p-4 h-40 w-40 mx-auto" src="img/profile/Aldo.jpg" alt="Aldo">
+        <div class="px-6 py-4">
+          <div class="font-bold text-neutral-100 text-lg md:text-xl mb-2 text-center">Aldo Raya Al Hakim</div>
+          <p class="text-gray-500 text-sm md:text-base text-center font-semibold">
+            FrontEnd Developer
+          </p>
+        </div>
+      </div>
+  
+      <!--Card 3-->
+      <div id="card3"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="center" class="rounded-lg shadow-xl bg-neutral-900 overflow-hidden md:cursor-pointer">
+        <img class="rounded-full p-4 h-40 w-40 mx-auto" src="img/profile/Ezar.png" alt="Ezar">
+        <div class="px-6 py-4">
+          <div class="font-bold text-neutral-100 text-lg md:text-xl mb-2 text-center">Muhammad Ezar Putradanu</div>
+          <p class="text-gray-500 text-sm md:text-base text-center font-semibold">
+            FrontEnd Developer
+          </p>
+        </div>
+      </div>
+
+      <div id="card4"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="center" class="rounded-lg shadow-xl bg-neutral-900 overflow-hidden md:cursor-pointer">
+        <img class="rounded-full p-4 h-40 w-40 mx-auto" src="img/profile/Lintang.jpg" alt="Lintang">
+        <div class="px-6 py-4">
+          <div class="font-bold text-neutral-100 text-lg md:text-xl mb-2 text-center">Lintang mulia kusumawardani</div>
+          <p class="text-gray-500 text-sm md:text-base text-center font-semibold">
+            BackEnd Developer
+          </p>
+        </div>
+      </div>
+
+      <div id="card5"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="center" class="rounded-lg shadow-xl bg-neutral-900 overflow-hidden md:cursor-pointer">
+        <img class="rounded-full p-4 h-40 w-40 mx-auto" src="img/profile/Irma.jpg" alt="Irma">
+        <div class="px-6 py-4">
+          <div class="font-bold text-neutral-100 text-lg md:text-xl mb-2 text-center">Irma Juanita</div>
+          <p class="text-gray-500 text-sm md:text-base text-center font-semibold">
+            FrontEnd Developer
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  </section>
+
+      <section id="requirement">
+      <section class="max-w-md md:max-w-lg h-full mx-auto py-16">
+        <div class="flex flex-wrap w-full mb-6 flex-col items-center text-center">
+          <h1 class="text-xl md:text-2xl font-medium title-font mb-2 text-white">Software yang digunakan dalam PKL</h1>
+        </div>
+        <div class="logo grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 mx-14 md:mx-0 space-y-2">
+          <a data-aos="zoom-in" data-aos-delay="500" href=""><img src="img/software/figma.png" class="pr-4" alt="Figma" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="700" href=""><img src="img/software/postman.png" class="pr-4" alt="Postman" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="900" href=""><img src="img/software/vscode.svg" class="pr-4" alt="VisualCode" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="1200" href=""><img src="img/software/gitlab.png" class="pr-4" alt="Github" width="125" height="125"></a>
+        </div>
+        <br>
+        <br>
+        <div class="flex flex-wrap w-full flex-col items-center text-center">
+          <h1 class="text-xl md:text-2xl font-medium title-font mb-2 text-white">Teknologi yang digunakan dalam PKL</h1>
+        </div>
+        <div class="logo grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 mx-14 md:mx-0 space-y-2">
+          <a data-aos="zoom-in" data-aos-delay="500" href=""><img src="img/teknologi/html.png" class="pr-4 relative top-2" alt="Github" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="700" href=""><img src="img/teknologi/javascript.png" class="pr-4" alt="Figma" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="900" href=""><img src="img/teknologi/css.png" class="pr-4" alt="VisualCode" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="1100" href=""><img src="img/teknologi/nodejs.jpg" class="pr-4" alt="Node JS" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="1300" href=""><img src="img/teknologi/react.jpg" class="pr-4" alt="VisualCode" width="125" height="125"></a>
+          <a data-aos="zoom-in" data-aos-delay="1400" href=""><img src="img/teknologi/postgres.png" class="pr-4" alt="VisualCode" width="125" height="125"></a>
+        </div>
+      </section>
+    </section>
+
+      <section class="project relative top-10" id="projects">
+         <div class="font-bold flex flex-1 justify-center text-white text-xl md:text-2xl">
+          <i class="fas fa-laptop-code"></i>
+          <p class="pl-2 text-xl md:text-2xl font-semibold">Project Made</p>
+        </div>
+        <div class="box-container"> 
+          <div data-tilt="" class="box" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform;">
+            <img draggable="false" src="img/project/ticketing.png" alt="ticketing">
+            <div class="content">
+              <div class="tag">
+                <h3 class="text-base md:text-lg">Ticketing</h3>
+              </div>
+              <div class="desc">
+                <p>Pesan Tiket Kereta Api Online</p>
+                <div class="btns">
+                  <a target="_blank" href="https://ticketing-id.vercel.app/" class="btn" onclick="muncul1()"><i class="fas fa-eye"></i> View</a>
+                  <a target="_blank" href="https://github.com/aldoraya/ticketing" class="btn" onclick="code1()">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-tilt="" class="box" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform; ">
+            <img draggable="false" src="img/project/Laundry.png" alt="Laundry">
+            <div class="content">
+              <div class="tag">
+                <h3 class="text-base md:text-2xl">Laundry</h3>
+              </div>
+              <div class="desc">
+                <p>Pemesanan Laundry </p>
+                <div class="btns">
+                  <a class="btn" onclick="muncul2()"><i class="fas fa-eye"></i> View</a>
+                  <a class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div data-tilt="" class="box" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform;">
+            <img draggable="false" src="img/project/antrian.jpeg" alt="ticketing">
+            <div class="content">
+              <div class="tag">
+                <h3 class="text-xl md:text-2xl">Antrian</h3>
+              </div>
+              <div class="desc">
+                <p>Antrian Online</p>
+                <div class="btns">
+                  <a class="btn" onclick="muncul3()"><i class="fas fa-eye"></i> View</a>
+                  <a target="_blank" href="https://gitlab.com/a10139" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="#lampiran">
+        <section class="max-w-md md:max-w-5xl py-20 mx-auto">
+           <div class="font-bold flex flex-1 justify-center text-white">
+            <p class="text-xl md:text-2xl font-semibold">Lampiran - lampiran</p>
+           </div>
+            <p class="text-white relative left-5 mt-10 md:mt-5 font-semibold">Foto Kegiatan</p>
+          <div class="mx-5 grid grid-cols-1 gap-2 md:grid-cols-4 md:gap-4 space-y-4 mt-10">
+            <img src="img/lampiran/gambar1.jpg" class="w-96 h-96 relative md:top-4" alt="pkl-1">
+            <img src="img/lampiran/gambar2.jpg" class="w-96 h-96" alt="pkl-2">
+            <img src="img/lampiran/gambar3.jpg" class="w-96 h-96" alt="pkl-3">
+            <img src="img/lampiran/gambar4.jpg" class="w-96 h-96" alt="pkl-4">
+          </div>
+          <nav class="mt-10"></nav>
+          <p class="text-white text-center relative left-5 mt-16 md:mt-5 font-semibold">Foto Bersama Pembimbing</p>
+          <div class="mt-10 flex flex-1 justify-center mx-8 md:mx-0">
+            <img src="img/lampiran/foto-bersama-pembimbing.jpg" class="max-w-auto md:w-auto h-96 relative right-2 md:right-0 md:left-6" alt="pkl-2">
+          </div>
+        </section>
+      </section>
+
+      <section id="contact">
+          <div class="flex flex-wrap w-full pt-12 flex-col items-center text-center">
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">SOCIAL MEDIA</h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Ingin Bertanya & Bekerja Sama?</p>
+          </div>
+    
+          <div class="logo flex flex-row pb-12 justify-center">
+            <a href="https://www.facebook.com/deswitaa03/"><img src="img/icons8-facebook.svg" class="pr-4" alt="Facebook" width="60" height="60"></a>
+            <a href="https://www.instagram.com/kmfjfichsiwiajwi_xyv"><img src="img/icons8-instagram.svg" class="pr-4" alt="Instagram" width="60" height="60"></a>
+            <a href="https://github.com/Piyoxz"><img src="img/icons8-github.svg" class="pr-4" alt="Github" width="60" height="60"></a>
+          </div>
+        </section> 
+
+    <a href="#up" aria-label="ScrollTop" class="fas fa-arrow-up active" id="scroll-top">
+    </a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/particles.js" type="text/javascript"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://erastushs.netlify.app//assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- cdn alpine js -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <!-- -->
+
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <script type="text/javascript" src="js/typing.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/card.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+  </html>
