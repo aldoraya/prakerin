@@ -12,7 +12,7 @@ $('#card2').click(function(){
 
 $('#card3').click(function(){
     swal({
-        text: 'Nama: Muhammad Ezar Putradanu \n \n Nis: 202110345 \n \n Kelas: XII Rekayasa Perangkat Lunak 2 \n \n Agama: Islam \n \n Tempat, Tanggal lahir: Bekasi, 06 Februari 2005 \n \n Alamat Tempat Tinggal: Cluste rKiana Cikunir Blok A10 \n \n Alamat Prakerin: PT. BANGUN KREATIF ABADI \n \n Mulai Prakerin: 17 Januari 2022 \n \n Selesai Prakerin: 17 April 2022 ',
+        text: 'Nama: Muhammad Ezar Putrandanu \n \n Nis: 202110345 \n \n Kelas: XII Rekayasa Perangkat Lunak 2 \n \n Agama: Islam \n \n Tempat, Tanggal lahir: Bekasi, 06 Februari 2005 \n \n Alamat Tempat Tinggal: Cluster Kiana Cikunir Blok A10 \n \n Alamat Prakerin: PT. BANGUN KREATIF ABADI \n \n Mulai Prakerin: 17 Januari 2022 \n \n Selesai Prakerin: 17 April 2022 ',
     });
 });
 
