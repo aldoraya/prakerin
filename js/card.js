@@ -142,6 +142,17 @@ $('#card-visi').click(function(){
 
 $('#card-visi2').click(function(){
     swal.fire({
-        text: 'VISI :\n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n MISI: \n  1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
+        html: "<div class='text-center font-bold text-xl'>Visi </div>" +
+        "<br>" +
+        "<p class='text-left block'>1. Menjadi penyedia solusi dan layanan TI terkemuka di industri.</p>" +
+        "<p class='text-left block'>2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka</p>" +
+        "<p class='text-left block'>3. Berkontribusi pada pengembangan industri TI di negara atau wilayah.</p>" +
+        "<br>" +
+        "<div class='text-center font-bold text-xl'>Misi </div>" +
+        "<br>" +
+        "<p class='text-left block'>1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis.</p>" +
+        "<p class='text-left block'>2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan.</p>" +
+        "<p class='text-left block'>3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.</p>",
+        button: 'oke',
     })
 })
