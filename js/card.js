@@ -30,12 +30,12 @@ $('#card5').click(function(){
 
 $('#card-visi').click(function(){
     swal({
-        text: 'Visi :\n \n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n Misi: \n \n 1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
+        text: 'VISI :\n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n MISI: \n  1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
     })
 })
 
 $('#card-visi2').click(function(){
     swal({
-        text: 'Visi :\n \n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n Misi: \n \n 1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
+        text: 'VISI :\n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n MISI: \n  1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
     })
 })
