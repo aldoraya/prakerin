@@ -127,9 +127,10 @@ $('#card-visi').click(function(){
     swal.fire({
         html: "<div class='text-center font-bold text-xl'>Visi </div>" +
         "<br>" +
-        "<p class='text-left block'>1. Menjadi penyedia solusi dan layanan TI terkemuka di industri.</p>" +
-        "<p class='text-left block'>2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka</p>" +
-        "<p class='text-left block'>3. Berkontribusi pada pengembangan industri TI di negara atau wilayah.</p>" +
+        "<ul>" +
+        "<li class='text-justify'>Menjadi penyedia solusi dan layanan TI terkemuka di industri.</li>" +
+        "<li class='text-left'>Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka</li>" +
+        "<p class='text-left block'>3. Berkontribusi pada pengembangan industri TI di negara atau wilayah.</>" +
         "<br>" +
         "<div class='text-center font-bold text-xl'>Misi </div>" +
         "<br>" +
