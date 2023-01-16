@@ -27,3 +27,9 @@ $('#card5').click(function(){
         text: 'Nama: Irma Juanita \n \n Nis: 202110339 \n \n Kelas: XII Rekayasa Perangkat Lunak 2 \n \n Agama: Islam \n \n Tempat, Tanggal lahir: Jakarta, 02 Juni 2004 \n \n Alamat Tempat Tinggal: Perum.Taman Rahayu Regency 1 Jln. Flamboyan 3 Blok B13 No.283 RT.10/RW.08 \n \n Alamat Prakerin: PT. BANGUN KREATIF ABADI \n \n Mulai Prakerin: 17 Januari 2022 \n \n Selesai Prakerin: 17 April 2022 ',
     });
 });
+
+$('#card-visi').click(function(){
+    swal({
+        text: 'Visi :\n \n 1. Menjadi penyedia solusi dan layanan TI terkemuka di industri. \n \n 2. Membangun kemitraan jangka panjang dengan pelanggan untuk mendukung perjalanan transformasi digital mereka. \n \n 3. Berkontribusi pada pengembangan industri TI di negara atau wilayah. \n \n Misi: \n \n 1. Memberikan solusi IT yang inovatif untuk meningkatkan efisiensi dan efektifitas bisnis. \n \n 2. Memberikan layanan TI yang berkualitas tinggi dan andal untuk memenuhi kebutuhan pelanggan. \n \n 3. Berinvestasi dalam penelitian dan pengembangan untuk tetap berada di garis depan kemajuan teknologi.'
+    })
+})
